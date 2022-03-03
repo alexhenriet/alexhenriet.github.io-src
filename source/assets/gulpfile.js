@@ -1,5 +1,5 @@
-// Must match stylesheet link in source/_layouts/app.html.twig and sublevel.html.twig
-const file = 'merged-20220302-2.min.css'
+// Must match stylesheet link in source/_layouts/app.html.twig
+const file = 'merged-20220302-3.min.css'
 
 const { series, src, dest } = require('gulp'),
     concat = require('gulp-concat'),

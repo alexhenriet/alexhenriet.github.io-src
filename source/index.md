@@ -71,12 +71,12 @@ It was a pleasure to have him in our team, also because he likes to participate 
     </tr>
     <tr>
       <td>2013</td>
-      <td><a href="https://connect.sensiolabs.com/profile/setsuna">Symfony2 : Level 2</a></td>
+      <td>Symfony2 : Level 2</td>
       <td>SensioLabs</td>
     </tr>
     <tr>
       <td>2013</td>
-      <td><a href="https://connect.sensiolabs.com/profile/setsuna">Symfony2 : Level 1</a></td>
+      <td>Symfony2 : Level 1</td>
       <td>SensioLabs</td>
     </tr>
     <tr>
