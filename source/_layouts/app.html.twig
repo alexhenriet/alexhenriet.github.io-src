@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ site.author }}</title>
+        <link rel="stylesheet" href="/assets/css/merged-20220302-2.min.css">
+        <meta name="author" content="{{ site.author }}">
+        <meta name="description" content="Site web personnel et Curriculum Vitae de {{ site.author }}">
+        <meta name="keywords" content="{{ site.author }} Curriculum Vitae PHP Symfony Zend Certified Engineer ZCE"/>
+    </head>
+    <body id="{% block mainid %}CV{% endblock %}">
+    <div class="header-container">
+        <header class="wrapper clearfix">
+            <h1 class="title"><a href="/">{{ site.author }}</a></h1>
+            {% block menu %}{% set current_page = 'CV' %}{% include "menu.html.twig" %}{% endblock %}
+        </header>
+    </div>
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            <article>
+                {% block body %}{% endblock %}
+            </article>
+            <aside>
+                {% block aside %}{% include "aside.html.twig" %}{% endblock %}
+            </aside>
+        </div>
+    </div>
+    <div class="footer-container">
+        <footer class="wrapper">
+            <p><a id="toplink" href="#">Haut de la page</a> © <b>{{ site.author }}, 2022</b>. Site généré avec <a href="https://sculpin.io/">Sculpin</a>, icônes par <a href="https://www.glyphicons.com/">Glyphicons</a> et <a href="https://fontawesome.com/">Font Awesome</a> - <a href="./mentions-legales">Mentions légales</a>.</p>
+        </footer>
+    </div>
+    <script>document.addEventListener("DOMContentLoaded",function(){document.getElementById("toplink").onclick=function(t){t.preventDefault(),window.scroll({behavior:"smooth",left:0,top:0})}});</script>
+    </body>
+</html>

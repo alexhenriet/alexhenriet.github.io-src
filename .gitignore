@@ -1,0 +1,6 @@
+.idea
+.editorconfig
+/output_*/
+/vendor/
+/source/assets/node_modules/
+/source/assets/css/merged-*

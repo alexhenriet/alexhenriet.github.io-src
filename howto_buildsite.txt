@@ -1,0 +1,20 @@
+$ cd source\assets
+$ gulp
+[07:18:02] Using gulpfile source\assets\gulpfile.js
+[07:18:02] Starting 'default'...
+[07:18:02] Starting 'clean'...
+[07:18:03] Finished 'clean' after 26 ms
+[07:18:03] Starting 'build'...
+[07:18:03] Finished 'build' after 44 ms
+[07:18:03] Finished 'default' after 90 ms
+
+$ cd root
+vendor\bin\sculpin generate --env=prod
+Detected new or updated files
+Generating: 100% (7302 sources / 3.83 seconds)
+Converting: 100% (7302 sources / 6.50 seconds)
+Formatting: 100% (7302 sources / 3.57 seconds)
+Processing completed in 37.57 seconds
+
+$ cd output_prod
+$ php -S 0.0.0.0:8000
